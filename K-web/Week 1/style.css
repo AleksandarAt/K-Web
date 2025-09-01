@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #001f3f, #0052a5, #007bff);
+  color: #f1f1f1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 40px;
+}
+
+.content {
+  max-width: 500px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.logo {
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ffd700; /* Goud */
+  margin: 10px 0;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px #c40000, 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+}
+
+.can img {
+  width: 230px;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.can img:hover {
+  transform: scale(1.1);
+}
+
+/* Animatie */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
